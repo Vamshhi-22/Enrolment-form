@@ -1,0 +1,136 @@
+<div class="row col-12" id="home">
+  <div class="col-md-3">
+    <div id="head" class="heading">
+      Patient Data Entery
+      <button class="btn btn-primary" (click)="transfer()" id="logout">
+        Home
+      </button>
+    </div>
+  </div>
+  <div class="row.col-12">
+    <form class="needs-validation" #form="ngForm" (ngSubmit)="logsubmit()">
+      <div class="form-row">
+        <div ngModelGroup="userdata" #userdata="ngModelGroup">
+          <div class="col-md-8 mb-3 form-group">
+            Name:<input
+              type="text"
+              class="form-control"
+              id="pname"
+              placeholder="Patient first name"
+              required
+              name="pfirstname"
+              [(ngModel)]="Enteredata.pfirstname"
+              #pfirstname="ngModel"
+              required
+            />
+            <h6 [hidden]="hide1" style="color: red">
+              Please enter a valid name
+            </h6>
+            <h6 [hidden]="hide8">Please enter a unique name</h6>
+          </div>
+          <div class="col-md-8 mb-7 form-group">
+            <div>
+              Phonenumber
+              <input
+                type="text"
+                class="form-control"
+                id="phonenumber"
+                placeholder="phonenumber"
+                [(ngModel)]="Enteredata.pphonenumber"
+                #pphonenumber="ngModel"
+                name="pphonenumber"
+                required
+              />
+              <h6 [hidden]="hide3" style="color: red">
+                Please enter a valid mobile number
+              </h6>
+            </div>
+          </div>
+          <div class="col-md-8 mb-7">
+            <div>
+              Age:<input
+                type="text"
+                class="form-control"
+                id="age"
+                placeholder="age"
+                #page="ngModel"
+                [(ngModel)]="Enteredata.page"
+                name="page"
+                required
+              />
+              <h6 [hidden]="hide4" style="color: red">
+                Please enter a valid age
+              </h6>
+            </div>
+          </div>
+          <div class="col-md-8 mb-3">
+            City:<input
+              type="text"
+              class="form-control"
+              id="city"
+              placeholder="City"
+              #pcity="ngModel"
+              [(ngModel)]="Enteredata.pcity"
+              name="city"
+              required
+            />
+            <h6 [hidden]="hide5" style="color: red">
+              Please enter a valid city
+            </h6>
+          </div>
+          <div class="col-md-8 mb-3">
+            State:<input
+              type="text"
+              class="form-control"
+              id="state"
+              placeholder="State"
+              required
+              #pstate="ngModel"
+              name="pstate"
+              [(ngModel)]="Enteredata.pstate"
+              required
+            />
+            <h6 [hidden]="hide6" style="color: red">
+              Please enter a valid state
+            </h6>
+          </div>
+          <div class="col-md-8 mb-3">
+            Room Number<input
+              type="text"
+              class="form-control"
+              id="roomno"
+              placeholder="room num"
+              name="proomno"
+              #proomno="ngModel"
+              [(ngModel)]="Enteredata.proomno"
+              required
+            />
+            <h6 [hidden]="hide7" style="color: red">
+              Please enter a valid age
+            </h6>
+          </div>
+          <div class="col-md-8 mb-3 form-group">
+            Gender
+            <input
+              type="text"
+              class="form-control"
+              id="lastname"
+              placeholder="Last name"
+              required
+              name="plastname"
+              [(ngModel)]="Enteredata.plastname"
+              #plastname="ngModel"
+            />
+            <h6 [hidden]="hide2" style="color: red">
+              Please enter a valid gender
+            </h6>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit" (click)="goingtoinfor()">
+          Submit form
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

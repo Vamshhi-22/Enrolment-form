@@ -1,0 +1,314 @@
+#head {
+  height: 100px;
+  background-color: rgb(237, 222, 207);
+  font-size: 42px;
+  color: rgb(221, 28, 6);
+  font-style: italic;
+  position: relative;
+  padding-left: 30%;
+  padding-top: 1%;
+}
+#logout {
+  position: absolute;
+  left: 90%;
+  top: 25%;
+  font-size: 21px;
+}
+#inpu {
+  width: 30%;
+  box-sizing: border-box;
+  border: 2px solid #e4d7d7;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("../../assets/search.png");
+  background-size: 30px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 20px 20px 20px 40px;
+  position: absolute;
+  left: 65%;
+  top: 14%;
+  border-radius: 10px 10px 10px 10px;
+}
+#tabel {
+  top: 200px;
+  height: auto;
+  width: 10%;
+}
+#kk {
+  position: relative;
+  background: linear-gradient(to right, rgb(243, 248, 172), #f0b573);
+  border: 1px rgb(53, 43, 63);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, cornflowerblue, #f6f6f6);
+}
+
+div.main {
+  width: 60rem;
+  height: 25rem;
+  margin: 5rem auto;
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+}
+h1 {
+  background: linear-gradient(to left, #3bb2c2, #d16fb4);
+  text-align: center;
+  /* color: transparent; */
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.25rem;
+  margin: 2rem 0;
+}
+.content {
+  height: 5rem;
+}
+
+input {
+  margin: 0 0.75rem;
+  appearance: none;
+  border: none;
+  width: 25rem;
+  height: 2rem;
+  font-size: 1.25rem;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f6f6f6;
+  border-bottom: 2px solid #c8d1e2;
+  transition: 0.3s ease;
+}
+input:hover {
+  font-size: 1.75rem;
+}
+input:focus-visible {
+  height: 1.75rem;
+  height: 3rem;
+  border: none;
+  background-color: #fff;
+}
+
+#ol {
+  appearance: none;
+  background: linear-gradient(
+    to left,
+    rgb(19, 87, 19),
+    rgb(19, 128, 19),
+    rgb(20, 184, 20)
+  );
+  font-size: 1.5rem;
+  border: none;
+  width: 10rem;
+  height: 3rem;
+  margin: 0 1rem;
+  color: #f6f6f6;
+  transition: 0.3s ease;
+}
+button:hover {
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 10px #4b556b;
+}
+.reset {
+  background: linear-gradient(
+    to right,
+    rgb(89, 141, 236) 60%,
+    rgb(173, 202, 255)
+  );
+}
+
+@media screen and (max-width: 800px) {
+  div.main {
+    width: 20rem;
+    height: 36rem;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    margin: 1rem 0;
+  }
+  input {
+    width: 18rem;
+    height: 1.5rem;
+  }
+  button {
+    width: 18rem;
+    height: 4rem;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(115deg, #56d8e4 10%, #7f08b6 90%);
+}
+.container {
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.container .text {
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to left, #ec0b0b, #09d6d6);
+  -webkit-text-fill-color: transparent;
+}
+.container form {
+  padding: 30px 0 0 0;
+}
+.container form .form-row {
+  display: flex;
+  margin: 32px 0;
+}
+form .form-row .input-data {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea {
+  height: 70px;
+}
+.input-data input,
+.textarea textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+.input-data input:focus ~ label,
+.textarea textarea:focus ~ label,
+.input-data input:valid ~ label,
+.textarea textarea:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea {
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label {
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #425766;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before {
+  transform: scale(1);
+}
+.submit-btn .input-data {
+  overflow: hidden;
+  height: 45px !important;
+  width: 80% !important;
+}
+.submit-btn .input-data .inner {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(
+    right,
+    #56d8e4,
+    #9f01ea,
+    #56d8e4,
+    #9f01ea
+  );
+  transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner {
+  left: 0;
+}
+.submit-btn .input-data input {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .container .text {
+    font-size: 30px;
+  }
+  .container form {
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row {
+    display: block;
+  }
+  form .form-row .input-data {
+    margin: 35px 0 !important;
+  }
+  .submit-btn .input-data {
+    width: 40% !important;
+  }
+}
+#delete {
+  color: red;
+}
+#home {
+  /* background: linear-gradient(to right,rgb(60, 216, 68) 60%, rgb(25, 81, 185)); */
+  background: linear-gradient(115deg, #56d8e4 10%, #36b479 90%);
+}
+.header {
+  height: 90px;
+}
+#search {
+  position: absolute;
+  top: 100px;
+}

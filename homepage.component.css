@@ -1,0 +1,109 @@
+.add {
+  background-color: rgb(178, 64, 184);
+  text-align: center;
+  height: auto;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 10px 10px 10px 10px;
+}
+.bb {
+  background-color: rgb(103, 109, 231);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 10px 10px 10px 10px;
+}
+/* #sect1 {  
+    height: 600px;  
+    color: #fff;
+    background-image: url("../../assets/hospi.jpg");  
+    background-size:100% ;  
+     
+} 
+#sect2 {  
+    height:auto;
+    color: #fff;
+    background-image: url("../../assets/hospi.jpg");  
+    background-size:100% ;  
+     
+}  */
+
+.header {
+  height: 90px;
+  width: 100%;
+}
+#dd {
+  height: 15%;
+  width: 100%;
+  background: linear-gradient(115deg, #2dd46d 10%, #6ed4f3 90%);
+}
+#k {
+  color: rgb(95, 42, 7);
+  padding: 10px 50px;
+  height: 20%;
+}
+#i {
+  color: rgb(179, 110, 7);
+  padding-left: 90%;
+  height: 20%;
+  font-size: 170%;
+}
+#mm {
+  color: rgb(179, 110, 7);
+  text-align: center;
+  padding-top: 20px;
+  font-size: 300%;
+  font-style: italic;
+  height: 50%;
+}
+#oo {
+  background-color: rgb(25, 95, 31);
+  width: 100%;
+}
+#cc {
+  position: absolute;
+  left: 800px;
+}
+#op {
+  background: linear-gradient(115deg, #a2ecf3 10%, #97ebc4 90%);
+  opacity: 0.9;
+  padding-left: 80px;
+  width: auto;
+  height: 450px;
+  border-radius: 10px 10px 10px 10px;
+}
+#aa {
+  height: auto;
+  width: 600px;
+}
+#Login {
+  border: black solid;
+  height: auto;
+  width: 500px;
+  background: linear-gradient(
+    to right,
+    rgb(229, 192, 226) 60%,
+    rgb(170, 186, 216)
+  );
+  padding-left: 70px;
+  position: absolute;
+  left: 35%;
+  bottom: 40%;
+
+  border-radius: 10px 10px 10px 10px;
+  opacity: 0.9;
+}
+#home2 {
+  background-color: rgb(207, 138, 171);
+  height: 660px;
+  width: 10%;
+}
+#home {
+  /* background: linear-gradient(to right,rgb(60, 216, 68) 60%, rgb(25, 81, 185)); */
+  background: linear-gradient(115deg, #56d8e4 50%, #36b479 80%);
+}

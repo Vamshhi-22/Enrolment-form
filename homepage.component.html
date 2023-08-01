@@ -1,0 +1,185 @@
+<div id="home">
+  <div class="header" id="home">
+    <h3 id="mm">Welcome to Care Hopsital</h3>
+    <button
+      style="position: absolute; top: 10px; right: 30px"
+      type="submit"
+      class="btn btn-primary bb"
+      (click)="sending()"
+      [hidden]="homedisable"
+    >
+      Signin
+    </button>
+    <button
+      style="position: absolute; top: 10px; right: 150px"
+      class="btn btn-primary add"
+      (click)="loginmet()"
+      [hidden]="homedisable"
+    >
+      signup
+    </button>
+    <button
+      style="position: absolute; top: 10px; right: 70px"
+      class="btn btn-primary add"
+      (click)="backing3()"
+      [hidden]="diddid"
+    >
+      Back
+    </button>
+  </div>
+
+  <div class="form-row" id="dd" style="position: absolute; top: 85%">
+    <div style="color: rgb(182, 107, 9); font-style: italic; font-size: 29px">
+      About
+    </div>
+    <div style="font-style: italic; font-size: 20px">
+      mobile number:9936332211
+    </div>
+    <div style="font-size: 20px; color: rgb(187, 111, 11)">Dr.Ramesh</div>
+    <div
+      style="
+        color: coral;
+        font-size: 29px;
+        position: absolute;
+        right: 10px;
+        top: 70%;
+      "
+    >
+      Care Hopitals
+    </div>
+  </div>
+</div>
+
+<div [hidden]="signupdisable" id="Signup">
+  <br />
+  <div id="aa" class="container">
+    <div style="border: rgb(240, 174, 174) solid" id="op">
+      <div class="row" id="bb">
+        <div class="col-md-10">
+          <form #form="ngForm">
+            <div ngModelGroup="userdata" #userdata="ngModelGroup">
+              <div class="form-group">
+                <label for="firstname">Name</label>
+                <input
+                  type="text"
+                  class="form-control e-input"
+                  id="firstname"
+                  name="firstname"
+                  [(ngModel)]="userdata1.firstname"
+                  required
+                  #firstname="ngModel"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phonenumber1">phonenumber</label>
+                <input
+                  type="phonenumber"
+                  class="form-control"
+                  id="phonenumber"
+                  name="phonenumber1"
+                  required
+                  #phonenumber="ngModel"
+                  [(ngModel)]="userdata1.phonenumber1"
+                />
+              </div>
+              <div class="form-group">
+                <label for="name">User Name</label>
+                <input
+                  type="text"
+                  class="form-control e-input"
+                  id="name"
+                  name="name"
+                  [(ngModel)]="userdata1.name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="password3">Password</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="password3"
+                  [(ngModel)]="userdata1.password1"
+                  required
+                  #password3="ngModel"
+                />
+                <span
+                  class="help-text"
+                  *ngIf="!password3.valid && password3.touched"
+                  >Please enter a valid password</span
+                >
+              </div>
+              <div class="form-group">
+                <label for="confirm">Confirm passowrd</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="confirm"
+                  [(ngModel)]="userdata1.confirm"
+                  required
+                  #confirm="ngModel"
+                />
+                <div [hidden]="pichi">confirm passowrd doesnt matched</div>
+                <br />
+                <button
+                  id="cc"
+                  type="submit"
+                  (click)="onsubmit()"
+                  class="btn btn-primary"
+                  style="left: 40%"
+                >
+                  submit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  style="left: 53%; position: absolute"
+                  (click)="back()"
+                >
+                  back
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Login" [hidden]="loghi">
+  <form #form1="ngForm" (ngSubmit)="logsubmit(form1)">
+    <div class="form-group col-md-8 mb-9">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        name="name"
+        [(ngModel)]="signInForm.name"
+        placeholder="username"
+      />
+    </div>
+    <div class="form-group col-md-8 mb-9">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        [(ngModel)]="signInForm.password1"
+      />
+      <div [hidden]="detailsdisable">
+        Please enter valid user name and passowrd
+      </div>
+    </div>
+    <br />
+    <div class="btn btn-primary col-md-3 mb-3">
+      <button type="submit" class="btn btn-primary" (click)="clicking1()">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+<!-- <a routerLink="/patient" routerLinkActive="active">Registration from</a> -->
+<!-- <app-patient></app-patient> -->

@@ -1,0 +1,25 @@
+#home{
+    border:solid aquamarine 1px;
+    width: 50%;
+    padding-left: 17%;
+    position: absolute;
+    left: 400px;  
+    bottom: 10%;  
+    background: linear-gradient(to right,rgb(245, 247, 137) 40%, rgb(235, 112, 204)); 
+    border-radius: 20px 20px 20px 20px;
+    opacity: 0.9;
+}
+#head{
+    font-size: 30px;
+    height: 50%;
+    width: 400px;
+    color: rgb(250, 6, 6);
+    font-style:oblique;
+    
+}
+#logout{
+    background-color: rgb(153, 80, 80);
+   position: absolute;
+   left: 85%;
+   top: 2%;
+}
